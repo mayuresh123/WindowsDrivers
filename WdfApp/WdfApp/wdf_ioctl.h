@@ -1,0 +1,15 @@
+#define IOCTL_READ CTL_CODE(FILE_DEVICE_UNKNOWN,\
+								0x800,\
+								METHOD_BUFFERED,\
+								FILE_READ_DATA)
+
+#define IOCTL_WRITE CTL_CODE(FILE_DEVICE_UNKNOWN,\
+								0x801,\
+								METHOD_BUFFERED,\
+								FILE_WRITE_DATA)
+
+typedef struct _INPUT_BUFFER
+{
+	int data;
+}INPUT_BUFFER, *PINPUT_BUFFER;
+
